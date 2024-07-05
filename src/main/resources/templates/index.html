@@ -99,21 +99,23 @@
 					currency: 'INR'
 
 				})
+				
 			});
 
-			const order = await response.json;
+			const order = await response.json();
 			console.log("--- Order Creation Completed");
 			return order;
 		}
 
 		document.getElementById('rzp-buttonl').onclick = async function(e) {
 			const order = await createOrder();
+			console.log("working fine");
 			console.log(order);
 			
 
 			var options = {
 				"key": "rzp_test_Swyvrt0vUqy59t",
-				"amount": order.amount,
+				"amount":order.amount,
 				"currency": "INR",
 				"name": "praveena a",
 				
@@ -129,8 +131,10 @@
 					"color": "#3399cc"
 				}
 
+				
 
 			};
+			console.log("i am fine");
 
 			var rzpl = new Razorpay(options);
 			rzpl.open();

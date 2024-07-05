@@ -31,7 +31,7 @@ public class customerService {
 		// amount is in paisa so multilplied with 100
 		orderReq.put("amount",custorder.getAmount()*100);
 		orderReq.put("currency", "INR");
-		orderReq.put("Reciept", custorder.getEmailId());
+		//orderReq.put("Reciept", custorder.getEmailId());
 		
 		this.client= new RazorpayClient(razorPayKey, razorPaySecretKey);
 		
