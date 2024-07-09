@@ -11,7 +11,7 @@
 	</parent>
 	<groupId>com.app.pay</groupId>
 	<artifactId>Payment-GateWay</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>SNAPSHOT</version>
 	<name>Payment-GatteWay</name>
 	<description>SpringBoot Application with Razorpay Payment gateway
 		Integration</description>
